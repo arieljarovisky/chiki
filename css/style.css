@@ -9805,11 +9805,19 @@ h4, h5, h6 {
   font-weight: 500;
   font-family: montserrat, sans-serif;
   outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: #B49C73;
+  border-radius: 25px;
+  border: #000 1px solid;
+  background-color: #37373F;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
 }
 
 @media (max-width: 991.98px) {

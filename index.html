@@ -36,7 +36,7 @@
     <!-- Header Start -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 bg-secondary d-none d-lg-block logo">
+            <div class="col-lg-12 bg-secondary d-none d-lg-block logo">
                 <div class="d-flex text-center">
                     <a href="index.html"
                         class="navbar-brand w-100 h-100 m-1 p-0  align-items-center justify-content-center">
@@ -45,8 +45,8 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-9">
-                <div class="row bg-white border-bottom d-none d-lg-flex">
+            <div class="col-lg-12">
+               <!--  <div class="row bg-white border-bottom d-none d-lg-flex">
                     <div class="col-lg-7 text-left">
                         <div class="h-100 d-inline-flex align-items-center py-2 px-3">
                             <i class="fa fa-envelope text-primary mr-2"></i>
@@ -76,7 +76,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <nav class="navbar navbar-expand-lg navbar-light p-0" style="background-color: white;">
                     <a href="#Inicio" class="navbar-brand d-block d-lg-none">
                         <h1 class="m-0 display-4 text-uppercase logo-txt">OMN</h1>
@@ -85,13 +85,13 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="#Inicio" class="nav-item nav-link active">Inicio</a>
+                        <div class="navbar-nav m-auto py-0">
+                            <a href="#Inicio" class="nav-item nav-link">Inicio</a>
                             <a href="#QuienesSomos" class="nav-item nav-link">Quienes Somos?</a>
-                            <a href="service.html" class="nav-item nav-link">Servicios</a>
-                            <a href="team.html" class="nav-item nav-link">Contacto</a>
+                            <a href="#servicios" class="nav-item nav-link">Servicios</a>
+                            <a href="#contacto" class="nav-item nav-link">Contacto</a>
+                            <a href="#AgendarCita" class="nav-item nav-link">Agenda una cita</a>
                         </div>
-                        <a href="#AgendarCita" class="btn btn-primary mr-3 d-none d-lg-block">Agenda una cita</a>
                     </div>
                 </nav>
             </div>
@@ -138,31 +138,8 @@
     </div>
     <!-- Carousel End -->
 
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="QuienesSomos">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7 mt-4 mt-lg-0">
-                    <h6 class="text-uppercase">¿Quienes Somos?</h6>
-                    <h1 class="mb-4">
-                        Brindamos servicios legales confiables y efectivos</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
-                    <a href="#AgendarCita" class="btn btn-primary mt-2">Leer mas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
     <!-- Services Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="servicios">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-3">
@@ -218,6 +195,29 @@
     <!-- Services End -->
 
 
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="QuienesSomos">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7 mt-4 mt-lg-0">
+                    <h1 class="text-uppercase">¿Quienes Somos?</h1>
+                    <p>Somos un estudio jurídico formado por profesionales jóvenes que combinamos el conocimiento legal con una forma de trabajar moderna, comprometida y humana del ejercicio del derecho.
+                        Nos tomamos cada caso con seriedad y responsabilidad, entendiendo que detrás de cada consulta hay personas con una historia y una preocupación que necesita una solución. Entendemos que cada situación es única, que merece un servicio personalizado, claridad, responsabilidad y transparencia. 
+                        Con un enfoque actualizado y el compromiso de no perder nunca el foco en lo esencial: cuidar tus intereses y defender tus derechos.</p>
+                    <a href="#AgendarCita" class="btn btn-primary mt-2">Contactenos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    
+
+
     <!-- Appointment Start -->
     <div class="container-fluid py-5" id="AgendarCita">
         <div class="container py-5">
@@ -225,7 +225,7 @@
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-lg-6 py-5">
                         <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
-                            <h1 class="text-center text-white mb-4">Agenda una cita</h1>
+                            <h1 class="text-center text-white mb-4">Dejanos tu consulta</h1>
                             <form>
                                 <div class="form-group">
                                     <input type="text" class="form-control border-0 p-4" placeholder="Nombre y Apellido"
@@ -235,28 +235,6 @@
                                     <input type="email" class="form-control border-0 p-4" placeholder="Email"
                                         required="required" />
                                 </div>
-                                <div class="form-row">
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <div class="date" id="date" data-target-input="nearest">
-                                                <input type="text"
-                                                    class="form-control border-0 p-4 datetimepicker-input"
-                                                    placeholder="Seleccione fecha" data-target="#date"
-                                                    data-toggle="datetimepicker" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <div class="time" id="time" data-target-input="nearest">
-                                                <input type="text"
-                                                    class="form-control border-0 p-4 datetimepicker-input"
-                                                    placeholder="Horario" data-target="#time"
-                                                    data-toggle="datetimepicker" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="form-group">
                                     <select class="custom-select border-0 px-4" style="height: 47px;">
                                         <option selected>Motivo</option>
@@ -265,9 +243,11 @@
                                         <option value="3">Servicio 3</option>
                                     </select>
                                 </div>
+                                <div class="form-group">
+                                    <textarea name="" id="" cols="30" rows="4" class="form-control border-0 p-4" id="" placeholder="Dejanos tu comentario"></textarea>
+                                </div>
                                 <div>
-                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Agendar
-                                        Cita</button>
+                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -331,7 +311,7 @@
 
 
     <!-- Action Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="contacto">
         <div class="container py-5">
             <div class="bg-action rounded" style="height: 500px;">
                 <div class="row h-100 align-items-center justify-content-center">
@@ -348,25 +328,14 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="nuestrosAbogados">
         <div class="container py-5">
             <div class="text-center pb-2">
                 <h6 class="text-uppercase">Nuestro Equipo</h6>
                 <h1 class="mb-4">Conoces a nuestros abogados </h1>
             </div>
             <div class="row">
-                    <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-4">
-                        <h5 class="mb-2 px-4">Agustin Marabi</h5>
-                        <p class="mb-3 px-4">Derecho Laboral</p>
-                        <div class="team-img position-relative">
-                            <img class="img-fluid" src="img/chiki.jpeg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-light btn-square mx-1" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-4">
+                    <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-6">
                         <h5 class="mb-2 px-4">Martin alberto</h5>
                         <p class="mb-3 px-4">Derecho Civil</p>
                         <div class="team-img position-relative">
@@ -377,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-4">
+                    <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-6">
                         <h5 class="mb-2 px-4">Juan pedro</h5>
                         <p class="mb-3 px-4">Derecho Penal</p>
                         <div class="team-img position-relative">
@@ -476,19 +445,7 @@
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-            </div>
-    
-            <!-- Dirección -->
-            <div class="col-lg-3">
-                <div class="d-flex p-4" style="background: rgba(256, 256, 256, .05);">
-                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
-                    <div class="ml-3">
-                        <h5 class="text-white">Our Office</h5>
-                        <p class="m-0">123 Street, New York, USA</p>
-                    </div>
-                </div>
-            </div>
-    
+            </div>    
             <!-- Email -->
             <div class="col-lg-3">
                 <div class="d-flex p-4" style="background: rgba(256, 256, 256, .05);">
