@@ -13,14 +13,22 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     window.open(url, "_blank");
 });
 
-  window.addEventListener('scroll', function () {
+let scrollTimeout;
+
+function handleScroll() {
+  if (window.matchMedia('(min-width: 992px)').matches) {
     const navbar = document.querySelector('.navbar');
     const logo = document.querySelector('.logo');
-    if (window.scrollY > 200) {
-      navbar.classList.add('scrolled');
-      logo.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-      logo.classList.remove('scrolled');
-    }
-  });
+    const scrolled = window.scrollY > 10; // ← Aumenta el umbral a 30px
+
+    navbar.classList.toggle('scrolled', scrolled);
+    logo.classList.toggle('scrolled', scrolled);
+  }
+}
+
+window.addEventListener('scroll', () => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(handleScroll, 25); // ← Debounce de 50ms
+});
+
+window.addEventListener('resize', handleScroll);

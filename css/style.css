@@ -4462,7 +4462,7 @@ input[type="button"].btn-block {
  .logo {
     position: relative;
     height: 80px;
-    transition: height 0.5s ease, opacity 0.5s ease;
+    transition: height 0.5s ease, opacity 0.8s ease;
     overflow: hidden;
     z-index: 1050;
   }
