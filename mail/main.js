@@ -12,3 +12,15 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     const url = `https://wa.me/${numero}?text=${texto}`;
     window.open(url, "_blank");
 });
+
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('.logo');
+    if (window.scrollY > 200) {
+      navbar.classList.add('scrolled');
+      logo.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+      logo.classList.remove('scrolled');
+    }
+  });
