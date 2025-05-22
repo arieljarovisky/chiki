@@ -28,7 +28,7 @@ function handleScroll() {
 
 window.addEventListener('scroll', () => {
   clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(handleScroll, 25); // ← Debounce de 50ms
+  scrollTimeout = setTimeout(handleScroll, 50); // ← Debounce de 50ms
 });
 
 window.addEventListener('resize', handleScroll);

@@ -478,6 +478,7 @@ h6,
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -4446,7 +4447,9 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
 }
-
+.owl-stage{
+  overflow: hidden;
+}
 .navbar-brand {
   display: inline-block;
   padding-top: 0;
@@ -4494,6 +4497,35 @@ input[type="button"].btn-block {
     height: 0;
     opacity: 0;
   }
+/* Oculta solo el logo grande al hacer scroll */
+#logoGrande.scrolled {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+/* Oculta solo el logo grande al hacer scroll */
+#logoGrande.scrolled {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+/* Estilos opcionales para fijar el navbar y mejorar visualmente */
+#navbarWrapper.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#navbarMenu {
+  transition: background-color 0.3s ease;
+}
+
 
 .navbar-nav {
   display: flex;
@@ -4501,6 +4533,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  margin-left: 35px !important;
 }
 
 .navbar-nav .nav-link {

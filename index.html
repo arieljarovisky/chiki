@@ -31,43 +31,45 @@
 
 <body>
     <!-- Header Start -->
-    <div class="navbar ">
-        <div class="row">
-            <div class="col-lg-12 bg-secondary d-none d-lg-block logo">
-                <div class="d-flex text-center">
-                    <div class="navbar-brand align-items-center justify-content-center" width="10%">
-                        <img src="img/Logo blanco.png" alt="logo omn estudio juridico" width="8%">
-                    </div>
+   <div class="navbar" id="navbarWrapper">
+    <div class="row">
+        <!-- LOGO GRANDE -->
+        <div class="col-lg-12 bg-secondary d-none d-lg-block logo" id="logoGrande">
+            <div class="d-flex text-center">
+                <div class="navbar-brand align-items-center justify-content-center" width="10%">
+                    <img src="img/Logo blanco.png" alt="logo omn estudio juridico" width="8%">
                 </div>
             </div>
-            <div class="col-lg-12">
+        </div>
 
-                <nav class="navbar navbar-expand-lg navbar-light p-0 "
-                    style="background-color: rgb(255, 255, 255); padding: 0px; ">
-                    <div class="d-flex justify-content-between align-items-center w-100 px-3 d-lg-none">
-                        <div class="navbar-brand m-0 p-0">
-                            <img src="img/Logo negro.png" alt="logo omn estudio juridico" width="40%">
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+        <!-- NAVBAR MENÚ -->
+        <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light p-0" id="navbarMenu"
+                style="background-color: rgb(255, 255, 255); padding: 0px;">
+                <div class="d-flex justify-content-between align-items-center w-100 px-3 d-lg-none">
+                    <div class="navbar-brand m-0 p-0">
+                        <img src="img/Logo negro.png" alt="logo omn estudio juridico" width="40%">
                     </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-                        <div class="navbar-nav m-auto py-0">
-                            <a href="#Inicio" class="nav-item nav-link m-2">Inicio</a>
-                            <a href="#servicios" class="nav-item nav-link m-2">Servicios</a>
-                            <a href="#QuienesSomos" class="nav-item nav-link m-2">Quienes Somos?</a>
-                            <a href="#AgendarCita" class="nav-item nav-link m-2">Agenda una cita</a>
-                            <a href="#contacto" class="nav-item nav-link m-2">Contacto</a>
-                        </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                    <div class="navbar-nav py-0">
+                        <a href="#Inicio" class="nav-item nav-link m-2">Inicio</a>
+                        <a href="#servicios" class="nav-item nav-link m-2">Servicios</a>
+                        <a href="#QuienesSomos" class="nav-item nav-link m-2">Quienes Somos?</a>
+                        <a href="#AgendarCita" class="nav-item nav-link m-2">Agenda una cita</a>
+                        <a href="#contacto" class="nav-item nav-link m-2">Contacto</a>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </div>
+</div>
     <!-- Header End -->
 
 
@@ -110,24 +112,24 @@
     <!-- Carousel End -->
 
     <!-- Services Start -->
-    <div class="container-fluid py-5" id="servicios">
-        <div class="container py-5">
+    <div class="container-fluid " id="servicios"  >
+        <div class="container ">
             <div class="row">
                 <div class="col-lg-3">
                     <h6 class="text-uppercase">Especialidad</h6>
-                    <h1 class="mb-4">Nuestra area de experticia</h1>
+                    <h1 class="">Nuestra area de experticia</h1>
                     <p>En OMN Estudio Jurídico brindamos asesoramiento integral, representación legal y soluciones
                         estratégicas en diversas ramas del Derecho, adaptándonos a las necesidades de cada cliente con
                         compromiso, confidencialidad y excelencia profesional.</p>
                 </div>
                 <div class="col-lg-9 pt-5 pt-lg-0">
-                    <div class="bg-primary rounded" style="height: 200px;">
+                    <div class="bg-primary rounded" style="height: 200px; ">
                     </div>
                     <div class="owl-carousel service-carousel position-relative"
                         style="margin-top: -100px; padding: 0 30px;">
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-landmark"></i>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4" >
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4" >
+                                <i class="fa fa-2x fa-landmark" style="overflow-y: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4">Derecho Civil</h5>
                             <p class="m-0 ">Reclamos por daños y perjuicios, asesoramiento en contratos, cobros y
@@ -135,7 +137,7 @@
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                             <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-users"></i>
+                                <i class="fa fa-2x fa-users" style="overflow-y: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4"> Laboral Trabajadores</h5>
                             <p class="m-0">Defendemos tus derechos frente a despidos, trabajo no registrado o
@@ -143,15 +145,15 @@
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                             <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-hand-holding-usd"></i>
+                                <i class="fa fa-2x fa-hand-holding-usd" style="overflow-y: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4">Laboral Empleadores</h5>
                             <p class="m-0">Brindamos estrategias laborales, prevención de conflictos y representación en
                                 juicios o audiencias.</p>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4" >
                             <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-people-roof"></i>
+                                <i class="fa fa-2x fa-people-roof" style="overflow-y: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4"> Derecho de Familia </h5>
                             <p class="m-0">Divorcios, alimentos, bienes y capacidad jurídica. Soluciones sensibles y
@@ -159,15 +161,15 @@
                         </div>
                         <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                             <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-gavel"></i>
+                                <i class="fa fa-2x fa-gavel" style="overflow-y: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4"> Derecho Comercial </h5>
                             <p class="m-0">Asistencia a empresas y emprendedores. Sociedades, contratos, concursos y
                                 litigios societarios.</p>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4" >
                             <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-file-signature"></i>
+                                <i class="fa fa-2x fa-file-signature" style="overflow-y: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4"> Derecho de Seguros </h5>
                             <p class="m-0">Reclamos ante aseguradoras, siniestros, coberturas y defensa frente a
