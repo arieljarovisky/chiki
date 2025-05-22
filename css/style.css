@@ -44,7 +44,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*{
+* {
   overflow-x: hidden;
 }
 html {
@@ -4447,7 +4447,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
 }
-.owl-stage{
+.owl-stage {
   overflow: hidden;
 }
 .navbar-brand {
@@ -4465,45 +4465,31 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 
- .logo {
-    position: relative;
-    height: 80px;
-    transition: height 0.5s ease, opacity 0.8s ease;
-    overflow: hidden;
-    z-index: 1050;
-  }
-
-  .logo img {
-
-    transition: height 0.5s ease;
-  }
-
-  .navbar {
-    position: sticky;
-    background-color: rgba(255, 255, 255, 0.034);
-    transition: top 0.5s ease, padding 0.5s ease, background-color 0.5s ease;
-    z-index: 1040;
-  }
-
-  .navbar.scrolled {
-    top: 0;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .logo.scrolled {
-    height: 0;
-    opacity: 0;
-  }
-/* Oculta solo el logo grande al hacer scroll */
-#logoGrande.scrolled {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: all 0.5s ease;
+.logo {
+  height: 80px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+
+.logo img {
+  transition: height 0.5s ease;
+}
+
+.navbar {
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.034);
+  transition: top 0.5s ease, padding 0.5s ease, background-color 0.5s ease;
+  z-index: 1040;
+}
+
+.navbar.scrolled {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: padding 0.5s ease, background-color 0.5s ease;
+}
+
 
 /* Oculta solo el logo grande al hacer scroll */
 #logoGrande.scrolled {
@@ -4512,20 +4498,26 @@ input[type="button"].btn-block {
   overflow: hidden;
   transition: all 0.5s ease;
 }
-
+.navbar-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
 /* Estilos opcionales para fijar el navbar y mejorar visualmente */
 #navbarWrapper.scrolled {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #navbarMenu {
   transition: background-color 0.3s ease;
 }
-
 
 .navbar-nav {
   display: flex;
@@ -10361,12 +10353,14 @@ h6 {
 }
 
 .bg-appointment {
-  background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(../img/carousel-1.jpg), no-repeat center center;
+  background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)),
+    url(../img/carousel-1.jpg), no-repeat center center;
   background-size: cover;
 }
 
 .bg-action {
-  background: linear-gradient(rgb(0 0 0 / 70%), rgba(55, 55, 63, 0.7)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgb(0 0 0 / 70%), rgba(55, 55, 63, 0.7)),
+    url(../img/carousel-2.jpg), no-repeat center center;
   background-size: cover;
 }
 

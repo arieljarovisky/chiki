@@ -13,22 +13,20 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     window.open(url, "_blank");
 });
 
-let scrollTimeout;
-
 function handleScroll() {
   if (window.matchMedia('(min-width: 992px)').matches) {
     const navbar = document.querySelector('.navbar');
-    const logo = document.querySelector('.logo');
-    const scrolled = window.scrollY > 10; // ← Aumenta el umbral a 30px
+    const logo = document.querySelector('#logoGrande');
+    const scrolled = window.scrollY > 30;
 
     navbar.classList.toggle('scrolled', scrolled);
-    logo.classList.toggle('scrolled', scrolled);
+    logo?.classList.toggle('scrolled', scrolled);
   }
 }
 
+let scrollTimeout;
 window.addEventListener('scroll', () => {
   clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(handleScroll, 50); // ← Debounce de 50ms
+  scrollTimeout = setTimeout(handleScroll, 50);
 });
-
 window.addEventListener('resize', handleScroll);
