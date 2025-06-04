@@ -2742,7 +2742,13 @@ fieldset:disabled a.btn {
   background-color: #d39e00;
   border-color: #c69500;
 }
-
+.modal{
+  min-width: 100%;
+}
+.modal-body ul li {
+  color: #212529; 
+  
+}
 .btn-warning:not(:disabled):not(.disabled):active:focus,
 .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {

@@ -30,3 +30,12 @@ window.addEventListener('scroll', () => {
   scrollTimeout = setTimeout(handleScroll, 50);
 });
 window.addEventListener('resize', handleScroll);
+  function abrirModal(titulo, descripcion) {
+    document.getElementById('modalTitulo').innerText = titulo;
+    document.getElementById('modalDescripcion').innerText = descripcion;
+    document.getElementById('infoModal').classList.remove('hidden');
+  }
+
+  function cerrarModal() {
+    document.getElementById('infoModal').classList.add('hidden');
+  }

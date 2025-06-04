@@ -24,7 +24,7 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -81,7 +81,9 @@
                     <img class="position-absolute w-100 h-100" src="img/fondo 1.png" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px; margin-top: 200px; overflow: hidden;">
-                            <h3 class="display-2 text-white mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 60px;" >Tu estudio jurídico de confianza</h3>
+                            <h3 class="display-2 text-white mb-4"
+                                style="font-family: 'Montserrat', sans-serif; font-size: 60px;">Tu estudio jurídico de
+                                confianza</h3>
                             <a class="btn btn-primary py-3 px-5 mt-2" href="#AgendarCita">Agenda una cita</a>
                         </div>
                     </div>
@@ -112,74 +114,277 @@
     <!-- Carousel End -->
 
     <!-- Services Start -->
-    <div class="container-fluid " id="servicios">
-        <div class="container ">
+    <div class="container-fluid" id="servicios">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <h6 class="text-uppercase">Especialidad</h6>
-                    <h1 class="">Nuestra area de experticia</h1>
-                    <p>En OMN Estudio Jurídico brindamos asesoramiento integral, representación legal y soluciones
-                        estratégicas en diversas ramas del Derecho, adaptándonos a las necesidades de cada cliente con
-                        compromiso, confidencialidad y excelencia profesional.</p>
+                    <h6 class="text-uppercase text-black">Especialidad</h6>
+                    <h1 class="text-black">Nuestra área de experticia</h1>
+                    <p class="text-black">En OMN Estudio Jurídico brindamos asesoramiento integral, representación legal
+                        y soluciones estratégicas en diversas ramas del Derecho, adaptándonos a las necesidades de cada
+                        cliente con compromiso, confidencialidad y excelencia profesional.</p>
                 </div>
                 <div class="col-lg-9 pt-5 pt-lg-0">
-                    <div class="bg-primary rounded" style="height: 200px; ">
-                    </div>
+                    <div class="bg-black rounded" style="height: 200px; background-color: black !important;"></div>
                     <div class="owl-carousel service-carousel position-relative"
                         style="margin-top: -100px; padding: 0 30px;">
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-landmark" style="overflow-y: hidden;"></i>
+
+                        <!-- Card 1 -->
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-white rounded pt-4 text-black overflow-hidden">
+                            <div class="icon-box bg-black text-white mt-2 mb-4 overflow-hidden">
+                                <i class="fa fa-2x fa-landmark" style="overflow: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4">Derecho Civil</h5>
-                            <p class="m-0 ">Reclamos por daños y perjuicios, asesoramiento en contratos, cobros y
-                                obligaciones. Atención integral y personalizada.</p>
+                            <p class="m-0">Reclamos por daños y perjuicios, asesoramiento en contratos, cobros y
+                                obligaciones.</p>
+                            <button type="button" class="btn btn-dark mt-3 mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalCivil">Ver más</button>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-users" style="overflow-y: hidden;"></i>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-white rounded pt-4 text-black overflow-hidden">
+                            <div class="icon-box bg-black text-white mt-2 mb-4 overflow-hidden">
+                                <i class="fa fa-2x fa-users" style="overflow: hidden;"></i>
                             </div>
-                            <h5 class="mb-4 px-4"> Laboral Trabajadores</h5>
+                            <h5 class="mb-4 px-4">Laboral Trabajadores</h5>
                             <p class="m-0">Defendemos tus derechos frente a despidos, trabajo no registrado o
-                                accidentes. Acompañamiento legal completo.</p>
+                                accidentes.</p>
+                            <button type="button" class="btn btn-dark mt-3 mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalTrabajadores">Ver más</button>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-hand-holding-usd" style="overflow-y: hidden;"></i>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-white rounded pt-4 text-black overflow-hidden">
+                            <div class="icon-box bg-black text-white mt-2 mb-4 overflow-hidden">
+                                <i class="fa fa-2x fa-hand-holding-usd" style="overflow: hidden;"></i>
                             </div>
                             <h5 class="mb-4 px-4">Laboral Empleadores</h5>
-                            <p class="m-0">Brindamos estrategias laborales, prevención de conflictos y representación en
-                                juicios o audiencias.</p>
+                            <p class="m-0">Estrategias laborales, prevención de conflictos y representación legal.</p>
+                            <button type="button" class="btn btn-dark mt-3 mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalEmpleadores">Ver más</button>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-people-roof" style="overflow-y: hidden;"></i>
+
+                        <!-- Card 4 -->
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-white rounded pt-4 text-black overflow-hidden">
+                            <div class="icon-box bg-black text-white mt-2 mb-4 overflow-hidden">
+                                <i class="fa fa-2x fa-people-roof" style="overflow: hidden;"></i>
                             </div>
-                            <h5 class="mb-4 px-4"> Derecho de Familia </h5>
-                            <p class="m-0">Divorcios, alimentos, bienes y capacidad jurídica. Soluciones sensibles y
-                                eficaces para tu situación familiar.</p>
+                            <h5 class="mb-4 px-4">Derecho de Familia</h5>
+                            <p class="m-0">Divorcios, alimentos, bienes y capacidad jurídica.</p>
+                            <button type="button" class="btn btn-dark mt-3 mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalFamilia">Ver más</button>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-gavel" style="overflow-y: hidden;"></i>
+
+                        <!-- Card 5 -->
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-white rounded pt-4 text-black overflow-hidden">
+                            <div class="icon-box bg-black text-white mt-2 mb-4 overflow-hidden">
+                                <i class="fa fa-2x fa-gavel" style="overflow: hidden;"></i>
                             </div>
-                            <h5 class="mb-4 px-4"> Derecho Comercial </h5>
-                            <p class="m-0">Asistencia a empresas y emprendedores. Sociedades, contratos, concursos y
-                                litigios societarios.</p>
+                            <h5 class="mb-4 px-4">Derecho Comercial</h5>
+                            <p class="m-0">Asistencia a empresas, sociedades, contratos y litigios.</p>
+                            <button type="button" class="btn btn-dark mt-3 mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalComercial">Ver más</button>
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <i class="fa fa-2x fa-file-signature" style="overflow-y: hidden;"></i>
+
+                        <!-- Card 6 -->
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-white rounded pt-4 text-black overflow-hidden">
+                            <div class="icon-box bg-black text-white mt-2 mb-4 overflow-hidden">
+                                <i class="fa fa-2x fa-file-signature" style="overflow: hidden;"></i>
                             </div>
-                            <h5 class="mb-4 px-4"> Derecho de Seguros </h5>
-                            <p class="m-0">Reclamos ante aseguradoras, siniestros, coberturas y defensa frente a
-                                incumplimientos contractuales.</p>
+                            <h5 class="mb-4 px-4">Derecho de Seguros</h5>
+                            <p class="m-0">Reclamos ante aseguradoras, siniestros y defensa contractual.</p>
+                            <button type="button" class="btn btn-dark mt-3 mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalSeguros">Ver más</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modales -->
+
+    <!-- Modal Derecho Civil -->
+    <div class="modal fade" id="modalCivil" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho Civil</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Acciones por daño moral, pérdida de chance, daño psicológico.</li>
+                        <li>Asesoramiento integral en indemnizaciones.</li>
+                        <li>Redacción, revisión y negociación de contratos.</li>
+                        <li>Reclamos por daños y perjuicios.</li>
+                        <li>Análisis y cumplimiento de obligaciones contractuales.</li>
+                        <li>Cobros judiciales y extrajudiciales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Derecho Sucesorio -->
+    <div class="modal fade" id="modalSucesorio" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho Sucesorio</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Asesoramiento integral en herencias.</li>
+                        <li>Tramitación de sucesiones testamentarias e intestadas.</li>
+                        <li>Partición de bienes.</li>
+                        <li>Testamentos.</li>
+                        <li>Sucesiones con bienes en distintas jurisdicciones.</li>
+                        <li>Conflictos sucesorios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Derecho Laboral - Trabajadores -->
+    <div class="modal fade" id="modalTrabajadores" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho Laboral - Trabajadores</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Reclamos por indemnizaciones laborales.</li>
+                        <li>Cálculo de liquidaciones finales.</li>
+                        <li>Reclamos por diferencias salariales o pagos mal liquidados.</li>
+                        <li>Reclamos por trabajo en negro o no registrado.</li>
+                        <li>Reincorporación por despido discriminatorio o por causa prohibida.</li>
+                        <li>Reclamos por accidentes y enfermedades laborales (Ley de Riesgos del Trabajo).</li>
+                        <li>Revisión de acuerdos transaccionales ante el SECLO.</li>
+                        <li>Asistencia a audiencias SECLO.</li>
+                        <li>Negociación extrajudicial con empleadores.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Derecho Laboral - Empleadores -->
+    <div class="modal fade" id="modalEmpleadores" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho Laboral - Empleadores</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Auditoría laboral.</li>
+                        <li>Asesoramiento en despidos, suspensiones y sanciones disciplinarias.</li>
+                        <li>Representación ante el SECLO y Ministerio de Trabajo.</li>
+                        <li>Cálculo y planificación de costos indemnizatorios.</li>
+                        <li>Defensa en juicios laborales.</li>
+                        <li>Diseño de estrategias preventivas ante conflictos laborales.</li>
+                        <li>Confección y presentación de telegramas laborales.</li>
+                        <li>Recursos ante ART o Superintendencia de Riesgos del Trabajo.</li>
+                        <li>Intervención en conflictos colectivos de trabajo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Derecho de Familia -->
+    <div class="modal fade" id="modalFamilia" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho de Familia</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Divorcios (de común acuerdo o contenciosos).</li>
+                        <li>División de bienes gananciales y protección del patrimonio.</li>
+                        <li>Reclamos por alimentos.</li>
+                        <li>Tramitación de procesos de restricción judicial a la capacidad jurídica.</li>
+                        <li>Fijación de cuota alimentaria para hijos/as menores, mayores de edad o cónyuge.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Derecho Comercial -->
+    <div class="modal fade" id="modalComercial" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho Comercial</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Constitución y asesoramiento de sociedades comerciales.</li>
+                        <li>Redacción, revisión y negociación de contratos.</li>
+                        <li>Representación de socios en disputas societarias.</li>
+                        <li>Impugnación de decisiones asamblearias o del Directorio.</li>
+                        <li>Asistencia en reorganizaciones empresarias, cierres o reconversiones de actividades.</li>
+                        <li>Transferencias de fondo de comercio.</li>
+                        <li>Asesoramiento integral en concursos preventivos y quiebras.</li>
+                        <li>Ejecuciones de pagarés, cheques y otros títulos valores.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Derecho de Seguros -->
+    <div class="modal fade" id="modalSeguros" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Derecho de Seguros</h5>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Reclamos por incumplimiento de aseguradoras.</li>
+                        <li>Juicios contra aseguradoras.</li>
+                        <li>Siniestros y coberturas.</li>
+                        <li>Seguros de vida y accidentes personales.</li>
+                        <li>Asesoramiento preventivo a empresas o particulares.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Services End -->
 
 
@@ -192,7 +397,8 @@
                 </div>
                 <div class="col-lg-7 mt-4 mt-lg-0">
                     <h1 class="text-uppercase">¿Quienes Somos?</h1>
-                    <p class="justificado">Somos un estudio jurídico formado por profesionales jóvenes que combinamos el conocimiento legal
+                    <p class="justificado">Somos un estudio jurídico formado por profesionales jóvenes que combinamos el
+                        conocimiento legal
                         con una forma de trabajar moderna, comprometida y humana del ejercicio del derecho.
                         Nos tomamos cada caso con seriedad y responsabilidad, entendiendo que detrás de cada consulta
                         hay personas con una historia y una preocupación que necesita una solución. Entendemos que cada
@@ -318,7 +524,7 @@
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-lg-7 text-center">
                         <h1 class="text-white mb-4">
-                            ¡Comencemos! Llámenos ahora para una consulta gratuita</h1>
+                            ¡Comencemos! onsulta ahora para una consulta gratuita</h1>
                         <a class="btn btn-primary py-3 px-5 mt-2" href="#AgendarCita">Agenda una cita</a>
                     </div>
                 </div>
@@ -338,20 +544,9 @@
             <div class="row">
                 <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-6">
                     <h5 class="mb-2 px-4">Martín Orman </h5>
-                    <p class="mb-3 px-4">Derecho Civil</p>
+                    <p class="mb-3 px-4">Socio Fundador</p>
                     <div class="team-img position-relative">
                         <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-light btn-square mx-1" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item text-center bg-white rounded overflow-hidden pt-4 col-md-6">
-                    <h5 class="mb-2 px-4">Gonzalo Núñez</h5>
-                    <p class="mb-3 px-4">Derecho Laboral</p>
-                    <div class="team-img position-relative">
-                        <img class="img-fluid" src="img/team-5.jpg" alt="">
                         <div class="team-social">
                             <a class="btn btn-outline-light btn-square mx-1" href="#"><i
                                     class="fab fa-linkedin-in"></i></a>
